@@ -29,8 +29,8 @@ import java.util.Map;
  */
 @Configuration
 public class ShiroConfig {
-    @Autowired(required = false)
-    private ResourcesService resourcesService;
+//    @Autowired(required = false)
+//    private ResourcesService resourcesService;
 
     @Value("${spring.redis.host}")
     private String host;
