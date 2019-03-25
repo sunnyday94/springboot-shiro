@@ -53,6 +53,11 @@ public class ShiroConfig {
     }
 
     /**
+     * 哪些页面需要受保护以及访问这些页面需要的权限
+     *  anon: 可以被匿名访问
+     *  authc: 必须认证(即登录)后才可以访问的页面
+     *
+     *
      * ShiroFilterFactoryBean 处理拦截资源文件问题。
      * 注意：单独一个ShiroFilterFactoryBean配置是或报错的，因为在
      * 初始化ShiroFilterFactoryBean的时候需要注入：SecurityManager
@@ -64,7 +69,7 @@ public class ShiroConfig {
      *
      */
     @Bean
-    public ShiroFilterFactoryBean shirFilter(SecurityManager securityManager){
+    public ShiroFilterFactoryBean shiroFilter(SecurityManager securityManager){
         System.out.println("ShiroConfiguration.shirFilter()");
         ShiroFilterFactoryBean shiroFilterFactoryBean  = new ShiroFilterFactoryBean();
 
