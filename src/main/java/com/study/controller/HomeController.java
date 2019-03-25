@@ -16,9 +16,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import javax.servlet.http.HttpServletRequest;
 import java.util.Map;
 
-/**
- * Created by yangqj on 2017/4/21.
- */
 @Controller
 public class HomeController {
     @RequestMapping(value="/login",method= RequestMethod.GET)
@@ -27,7 +24,7 @@ public class HomeController {
     }
 
     @RequestMapping(value="/login",method=RequestMethod.POST)
-    public String login(HttpServletRequest request, User user, Model model){
+    public String login(HttpServletRequest request, User user){
         if (StringUtils.isEmpty(user.getUsername()) || StringUtils.isEmpty(user.getPassword())) {
             request.setAttribute("msg", "用户名或密码不能为空！");
             return "login";

@@ -7,9 +7,6 @@ import org.springframework.boot.web.servlet.ServletRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-/**
- * Created by yangqj on 2017/4/19.
- */
 @Configuration
 public class DruidConfig {
 

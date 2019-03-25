@@ -1,5 +1,6 @@
 package com.study.shiro;
 
+import com.google.common.collect.Maps;
 import com.study.model.Resources;
 import com.study.model.User;
 import com.study.service.ResourcesService;
@@ -18,9 +19,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/**
- * Created by yangqj on 2017/4/21.
- */
 public class MyShiroRealm extends AuthorizingRealm {
 
     @Resource
@@ -33,7 +31,7 @@ public class MyShiroRealm extends AuthorizingRealm {
     @Override
     protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principalCollection) {
         User user= (User) SecurityUtils.getSubject().getPrincipal();//User{id=1, username='admin', password='3ef7164d1f6167cb9f2658c07d3c2f0a', enable=1}
-        Map<String,Object> map = new HashMap<String,Object>();
+        Map<String,Object> map = Maps.newHashMap();
         map.put("userid",user.getId());
         List<Resources> resourcesList = resourcesService.loadUserResources(map);
         // 权限信息对象info,用来存放查出的用户的所有的角色（role）及权限（permission）

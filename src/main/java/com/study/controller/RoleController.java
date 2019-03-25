@@ -17,9 +17,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/**
- * Created by yangqj on 2017/4/26.
- */
 @RestController
 @RequestMapping("/roles")
 public class RoleController {

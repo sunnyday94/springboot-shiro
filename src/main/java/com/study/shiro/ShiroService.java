@@ -19,9 +19,6 @@ import org.springframework.stereotype.Service;
 
 import java.util.*;
 
-/**
- * Created by yangqj on 2017/4/30.
- */
 @Service
 public class ShiroService {
     @Autowired

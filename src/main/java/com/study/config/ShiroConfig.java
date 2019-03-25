@@ -24,9 +24,6 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
-/**
- * Created by yangqj on 2017/4/23.
- */
 @Configuration
 public class ShiroConfig {
     @Autowired(required = false)

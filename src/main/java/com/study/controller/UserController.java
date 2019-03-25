@@ -16,9 +16,6 @@ import javax.annotation.Resource;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * Created by yangqj on 2017/4/22.
- */
 @RestController
 @RequestMapping("/users")
 public class UserController {

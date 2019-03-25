@@ -1,8 +1,5 @@
 package com.study.util;
 
-/**
- * Created by yangqj on 2017/4/20.
- */
 import tk.mybatis.mapper.common.Mapper;
 import tk.mybatis.mapper.common.MySqlMapper;
 public interface MyMapper<T> extends Mapper<T>, MySqlMapper<T> {
