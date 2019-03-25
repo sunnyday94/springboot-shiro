@@ -1,6 +1,5 @@
 package com.study.shiro;
 
-import com.google.common.collect.Maps;
 import com.study.model.Resources;
 import com.study.model.User;
 import com.study.service.ResourcesService;
