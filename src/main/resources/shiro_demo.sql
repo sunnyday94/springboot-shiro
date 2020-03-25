@@ -116,9 +116,7 @@ CREATE TABLE `user` (
 -- Records of user
 -- ----------------------------
 INSERT INTO `user` VALUES ('1', 'admin', '3ef7164d1f6167cb9f2658c07d3c2f0a', '1');
-INSERT INTO `user` VALUES ('2', 'user1', '90e66e36e3135a91d298177d4389851e', '1');
-INSERT INTO `user` VALUES ('22', 'sunny', 'a135a1e6fe34205dc6b43b618147b6f2', '1');
-INSERT INTO `user` VALUES ('23', 'wangzhifang', '1c8319889519a5a7c30de5d1b1490739', '1');
+INSERT INTO `user` VALUES ('2', 'sunny', 'a135a1e6fe34205dc6b43b618147b6f2', '1');
 
 -- ----------------------------
 -- Table structure for user_role
